@@ -1,28 +1,28 @@
-# contrib 
+# git-contrib
 Show contributors for specified files.
 
 ## Installation
 
 ```
-$ go get github.com/naoty/contrib
+$ go get github.com/naoty/git-contrib
 ```
 
 ## Usage
 
 ```
-$ contrib main.go
+$ git contrib main.go
 Naoto Kaneko
 ```
 
 ```
-$ contrib main.go hello.go
+$ git contrib main.go hello.go
 Naoto Kaneko
 ```
 
 `-n` option helps to specify the number of contributors.
 
 ```
-$ contrib -n 3 main.go hello.go
+$ git contrib -n 3 main.go hello.go
 Nobunaga Oda
 Hideyoshi Toyotomi
 Ieyasu Tokugawa

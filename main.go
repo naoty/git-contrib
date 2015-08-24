@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/codegangsta/cli"
-	"github.com/naoty/contrib/command"
+	"github.com/naoty/git-contrib/command"
 )
 
 func main() {

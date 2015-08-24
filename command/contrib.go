@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/codegangsta/cli"
-	"github.com/naoty/contrib/util"
+	"github.com/naoty/git-contrib/util"
 )
 
 func Contrib(c *cli.Context) {
