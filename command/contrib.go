@@ -24,7 +24,7 @@ func Contrib(c *cli.Context) {
 
 	number := c.Int("number")
 	if number == 0 {
-		number = len(names)
+		number = 1
 	}
 
 	for i, name := range names {
