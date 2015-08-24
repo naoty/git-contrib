@@ -19,11 +19,6 @@ $ contrib main.go hello.go
 Naoto Kaneko
 ```
 
-```
-$ contrib app/
-Naoto Kaneko
-```
-
 `-n` option helps to specify the number of contributors.
 
 ```
