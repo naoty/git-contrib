@@ -22,11 +22,24 @@ func Contrib(c *cli.Context) {
 		log.Fatal(err)
 	}
 
-	for _, name := range names {
+	number := c.Int("number")
+	if number == 0 {
+		number = len(names)
+	}
+
+	for i, name := range names {
+		if i >= number {
+			break
+		}
 		fmt.Println(name)
 	}
 
 	os.Exit(0)
+}
+
+var ContribFlag = cli.IntFlag{
+	Name:  "number, n",
+	Usage: "the number of contributors",
 }
 
 func getContributors(filenames []string) ([]string, error) {

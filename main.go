@@ -15,5 +15,6 @@ func main() {
 	app.Author = "Naoto Kaneko"
 	app.Email = "naoty.k@gmail.com"
 	app.Action = command.Contrib
+	app.Flags = []cli.Flag{command.ContribFlag}
 	app.Run(os.Args)
 }
