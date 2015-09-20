@@ -68,7 +68,7 @@ func getContributors(filenames []string) ([]string, error) {
 }
 
 func gitLog(filename string) ([]string, error) {
-	// Print only auther's name
+	// Print only author's name
 	cmd := exec.Command("git", "log", "--pretty=format:%an", filename)
 	out, err := cmd.CombinedOutput()
 	str := string(out)
